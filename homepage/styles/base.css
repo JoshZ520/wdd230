@@ -1,0 +1,10 @@
+body {
+  text-align: center;
+  display: grid;
+  height: 50px;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+img {
+  height: 200px;
+}
