@@ -16,3 +16,11 @@ header {
 h1 {
   color: white;
 }
+
+.card {
+  width: 50%;
+}
+
+main {
+  justify-items: center;
+}
