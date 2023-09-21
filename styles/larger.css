@@ -3,10 +3,10 @@
     flex-direction: row;
   }
 
-  main {
+  /* main {
     display: grid;
     grid-template-columns: 2fr 1fr;
-  }
+  } */
 
   main section {
     margin: 1rem 0.5rem;

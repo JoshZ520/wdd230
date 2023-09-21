@@ -1,7 +1,7 @@
 @import url();
 
 body {
-  max-width: 1600px;
+  max-width: 100%;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -19,7 +19,11 @@ h1 {
   color: white;
 }
 main {
-  width: 800;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  max-width: 100%;
+  align-items: center;
 }
 nav a:link,
 nav a:visited {
@@ -29,4 +33,9 @@ nav a:visited {
 main a:link,
 main a:visited {
   color: blueviolet;
+}
+
+.card {
+  width: 50%;
+  background-color: rosybrown;
 }
