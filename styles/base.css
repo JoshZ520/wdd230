@@ -17,10 +17,13 @@ h1 {
   color: white;
 }
 
-/* .card {
-  width: 50%;
-} */
-/* 
-main {
-  justify-items: center;
-} */
+a:link {
+  color: white;
+}
+a:visited {
+  color: yellow;
+}
+
+#lesson {
+  color: blueviolet;
+}
