@@ -16,7 +16,9 @@ header {
 h1 {
   color: white;
 }
-
+main {
+  width: 800;
+}
 nav a:link,
 nav a:visited {
   color: white;
