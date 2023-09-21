@@ -17,11 +17,12 @@ h1 {
   color: white;
 }
 
-a:link,
-a:visited {
+nav a:link,
+nav a:visited {
   color: white;
 }
 
-#lesson {
+main a:link,
+main a:visited {
   color: blueviolet;
 }
