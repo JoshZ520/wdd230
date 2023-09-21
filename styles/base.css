@@ -1,8 +1,8 @@
 body {
   text-align: center;
-  display: grid;
+  display: flex;
+  flex-direction: column;
   height: 50px;
-  grid-template-rows: 1fr 1fr 1fr;
 }
 
 img {
