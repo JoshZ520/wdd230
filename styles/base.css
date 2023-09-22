@@ -1,10 +1,11 @@
-@import url();
+@import url("https://fonts.googleapis.com/css2?family=Mooli&display=swap");
 
 body {
   max-width: 100%;
   text-align: center;
   display: flex;
   flex-direction: column;
+  font-family: "Mooli", sans-serif;
 }
 
 img {
@@ -35,6 +36,24 @@ main a:visited {
   color: blueviolet;
 }
 
-.card {
-  width: 50%;
+nav ul {
+  display: flex;
+  flex-direction: column;
+}
+nav ul li {
+  list-style-type: none;
+  display: block;
+  width: 100%;
+}
+
+nav ul li a {
+  display: block;
+  text-decoration: none;
+  padding: 1rem;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+nav ul li a:hover {
+  background-color: red;
 }
