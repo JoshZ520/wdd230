@@ -6,6 +6,7 @@ body {
   display: flex;
   flex-direction: column;
   font-family: "Mooli", sans-serif;
+  background-color: aqua;
 }
 
 img {
@@ -26,14 +27,10 @@ main {
   max-width: 100%;
   align-items: center;
 }
-nav a:link,
-nav a:visited {
-  color: white;
-}
 
-main a:link,
-main a:visited {
+a {
   color: blueviolet;
+  text-decoration: none;
 }
 
 nav ul {
@@ -55,5 +52,12 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  background-color: red;
+  background-color: aqua;
+}
+
+.card {
+  border: 2px navy;
+  border-style: solid;
+  border-radius: 5px;
+  background-color: ghostwhite;
 }
