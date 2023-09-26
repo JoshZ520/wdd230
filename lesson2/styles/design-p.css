@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Mooli&display=swap");
 
 header {
-  background-color: aquamarine;
+  background-color: rgb(120, 250, 206);
   width: 100%;
   grid-column: 1/4;
 }
@@ -14,7 +14,16 @@ body {
 }
 
 section {
-  background-color: burlywood;
+  background-color: rgb(198, 162, 115);
+}
+
+section h3 {
+  color: white;
+}
+section .text {
+  color: white;
+  background-color: teal;
+  margin: auto;
 }
 /* .section1 {
   grid-column: 1/2;
