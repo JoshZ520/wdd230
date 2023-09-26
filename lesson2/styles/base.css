@@ -1,4 +1,12 @@
-section {
-  display: flex;
-  flex-direction: row;
+html {
+  display: block;
+}
+
+body {
+  display: block;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
