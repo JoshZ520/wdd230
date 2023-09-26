@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Mooli&display=swap");
+
+html {
+  display: block;
+}
+
+header {
+  background-color: aquamarine;
+  width: 100%;
+}
+body {
+  margin: 0 auto;
+  font-family: "Mooli", sans-serif;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.section1 {
+  grid-column: 1/2;
+}
+
+.section2 {
+  grid-column: 2/3;
+}
+
+.section3 {
+  grid-column: 3/4;
+}
