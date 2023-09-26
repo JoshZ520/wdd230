@@ -16,7 +16,7 @@ body {
 section {
   background-color: burlywood;
 }
-.section1 {
+/* .section1 {
   grid-column: 1/2;
 }
 
@@ -26,4 +26,4 @@ section {
 
 .section3 {
   grid-column: 3/4;
-}
+} */
