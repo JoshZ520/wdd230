@@ -15,6 +15,9 @@ body {
   grid-template-columns: 1fr 1fr 1fr;
 }
 
+section {
+  background-color: crimson;
+}
 .section1 {
   grid-column: 1/2;
 }
