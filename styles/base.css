@@ -42,6 +42,7 @@ nav ul li {
   list-style-type: none;
   display: block;
   width: 100%;
+  text-align: center;
 }
 
 nav ul li a {
@@ -64,4 +65,25 @@ nav ul li a:hover {
 }
 .active {
   background-color: honeydew;
+}
+
+.menu-hide,
+.menu-show {
+  display: none;
+  background-color: whitesmoke;
+  border: 1px solid hotpink;
+  margin: 0.5rem 0 0 0.5rem;
+}
+
+.menu-hide.showing,
+.menu-show.showing {
+  display: block;
+}
+
+#nav-menu {
+  display: none;
+}
+
+#nav-menu.showing {
+  display: flex;
 }
