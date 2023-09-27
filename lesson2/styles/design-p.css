@@ -23,7 +23,16 @@ section h3 {
 section .text {
   color: white;
   background-color: teal;
-  margin: auto;
+  margin-top: -10px;
+}
+
+section a {
+  color: blue;
+  text-decoration: none;
+}
+.img1 {
+  /* height: 500px; */
+  width: 200px;
 }
 /* .section1 {
   grid-column: 1/2;

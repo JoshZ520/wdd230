@@ -36,9 +36,11 @@
     <header>
       <img src="images/josh-zobrist.jpg" alt="Myself Josh, and my wife" />
       <h1>Joshua Zobrist</h1>
-      <nav>
+      <nav id="nav-menu">
+        <button class="menu-hide">X</button
+        ><button class="menu-show showing">&equiv;</button>
         <ul>
-          <li><a href="#"> Home </a></li>
+          <li class="active"><a href="#"> Home </a></li>
           <li><a href="chamber/siteplan.html"> Site Plan </a></li>
           <li><a href="chamber/"> Chamber </a></li>
           <li><a href="https://www.byui.edu/" target="_blank"> BYU-I </a></li>
@@ -81,6 +83,16 @@
         <p>Weather</p>
         <p>Rexburg, Idaho</p>
       </section>
+      <iframe
+        class="map"
+        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d23702.847261853753!2d-111.80158925446496!3d43.82453822308716!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1695764132907!5m2!1sen!2sus"
+        width="600"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
     </main>
     <footer>
       <p>&copy;<span id="currentyear"></span></p>
