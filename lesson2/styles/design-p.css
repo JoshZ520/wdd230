@@ -30,6 +30,10 @@ section a {
   color: blue;
   text-decoration: none;
 }
+.img3 {
+  width: 500px;
+  height: 600px;
+}
 .img1 {
   /* height: 500px; */
   width: 200px;
