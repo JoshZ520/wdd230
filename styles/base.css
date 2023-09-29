@@ -70,8 +70,9 @@ nav ul li a:hover {
 .menu-hide,
 .menu-show {
   display: none;
-  background-color: whitesmoke;
-  border: 1px solid hotpink;
+  background-color: orangered;
+  border: 1px solid orangered;
+  border-radius: 5px;
   margin: 0.5rem 0 0 0.5rem;
 }
 
