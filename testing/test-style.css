@@ -1,0 +1,9 @@
+ul ol li {
+  color: forestgreen;
+}
+ul li {
+  color: red;
+}
+ol + li {
+  color: blue;
+}
