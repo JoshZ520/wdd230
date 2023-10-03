@@ -1,0 +1,61 @@
+:root {
+  --border-color: blue;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+main {
+  margin: 0;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 0.5rem;
+  width: 760px;
+  background-color: #eee;
+}
+
+.datatable {
+  width: 200px;
+  margin-top: 2rem;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 100px 100px;
+  align-items: center;
+  text-align: center;
+}
+
+.col {
+  padding: 10px;
+}
+
+a:active,
+a:visited {
+  color: red;
+}
+
+a:hover {
+  color: purple;
+}
+
+.col {
+  border-top: 1px solid var(--border-color);
+  border-left: 1px solid var(--border-color);
+}
+.col:last-child {
+  border-right: 1px solid var(--border-color);
+}
+
+.row:last-child {
+  border-bottom: 1px solid var(--border-color);
+  background-color: rgb(255, 213, 0);
+}
