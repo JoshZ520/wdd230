@@ -6,7 +6,7 @@ body {
   display: flex;
   flex-direction: column;
   font-family: "Mooli", sans-serif;
-  background-color: aqua;
+  background-color: #9dcac5;
 }
 
 img {
@@ -68,7 +68,7 @@ main hr {
 }
 
 .card {
-  border: 2px navy;
+  border: 2px black;
   border-style: solid;
   border-radius: 5px;
   background-color: ghostwhite;
