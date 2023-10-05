@@ -1,14 +1,50 @@
 @import url(https://fonts.googleapis.com/css?family=Rubik);
 
 body {
+  max-width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
   font-family: Rubik, sans-serif;
+}
+
+a {
+  color: #81adc8;
+  text-decoration: none;
+}
+nav ul {
+  display: flex;
+  flex-direction: column;
+}
+
+nav ul li {
+  list-style-type: none;
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+nav ul li a {
+  display: block;
+  text-decoration: none;
+  padding: 1rem;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  max-width: 100%;
+  align-items: center;
 }
 
 .menu-hide,
 .menu-show {
   display: none;
   background-color: white;
-  border: 1px solid whitesmoke;
+  border: 1px solid black;
   border-radius: 5px;
   margin: 0.5rem 0 0 0.5rem;
 }

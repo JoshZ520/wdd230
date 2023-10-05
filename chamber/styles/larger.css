@@ -1,4 +1,8 @@
 @media screen and (min-width: 800px) {
+  nav ul {
+    flex-direction: row;
+  }
+
   .menu-show,
   .menu-hide,
   .menu-show.showing,
