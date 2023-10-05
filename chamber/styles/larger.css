@@ -1,0 +1,12 @@
+@media screen and (min-width: 800px) {
+  .menu-show,
+  .menu-hide,
+  .menu-show.showing,
+  .menu-hide.showing {
+    display: none;
+  }
+
+  #nav-menu {
+    display: flex;
+  }
+}
