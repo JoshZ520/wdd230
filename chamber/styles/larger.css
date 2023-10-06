@@ -3,6 +3,11 @@
     flex-direction: row;
   }
 
+  .section1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
   .menu-show,
   .menu-hide,
   .menu-show.showing,
