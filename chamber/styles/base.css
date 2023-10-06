@@ -80,3 +80,7 @@ img {
 #nav-menu.showing {
   display: flex;
 }
+
+footer {
+  background-color: #dea47e;
+}
