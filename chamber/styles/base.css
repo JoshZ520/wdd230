@@ -16,6 +16,10 @@ h1 {
   background-color: white;
   width: 500px;
   border-radius: 5px;
+  padding: 1rem;
+}
+header {
+  grid-column: 1/4;
 }
 a {
   color: #81adc8;

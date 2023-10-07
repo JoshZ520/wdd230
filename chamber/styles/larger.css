@@ -3,9 +3,16 @@
     flex-direction: row;
   }
 
-  .img-section {
+  main {
     display: grid;
+    grid-template-columns: 2fr 1fr;
+  }
+
+  .img-section {
     grid-template-columns: 1fr 1fr 1fr;
+  }
+  .weather {
+    grid-column: 2;
   }
 
   .menu-show,
