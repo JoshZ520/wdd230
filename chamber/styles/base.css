@@ -67,9 +67,6 @@ main {
 img {
   padding: 1rem;
 }
-h4 {
-  color: #81bbc8;
-}
 .menu-hide,
 .menu-show {
   display: none;
