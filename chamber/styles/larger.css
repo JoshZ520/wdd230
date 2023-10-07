@@ -3,7 +3,7 @@
     flex-direction: row;
   }
 
-  .section1 {
+  .img-section {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
   }

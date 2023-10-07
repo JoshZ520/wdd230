@@ -49,8 +49,17 @@ main {
   align-items: center;
   background-color: #cd4631;
 }
-
-.txt-section {
+.join {
+  background-color: white;
+  color: #81adc8;
+  padding: 1rem;
+}
+.weather {
+  background-color: #492d1d;
+  color: var(--text-color);
+  padding: 1rem;
+}
+.current-events {
   background-color: #dea47e;
   color: var(--text-color);
 }
