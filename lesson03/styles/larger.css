@@ -8,12 +8,12 @@
     grid-template-columns: 2fr 1fr;
   }
 
+  .weather {
+    grid-column: 2/3;
+  }
   .img-section {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-  }
-  .weather {
-    grid-column: 2/3;
   }
 
   .menu-show,
