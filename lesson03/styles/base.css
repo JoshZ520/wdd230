@@ -63,6 +63,12 @@ main {
   border-radius: 50px;
 }
 
+.hero-img {
+  width: 100%;
+  height: 650px;
+  padding: 0px;
+}
+
 .weather {
   background-color: #492d1d;
   color: var(--text-color);
