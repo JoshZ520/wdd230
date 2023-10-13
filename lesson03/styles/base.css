@@ -64,10 +64,10 @@ main {
 }
 
 .hero-img {
-  width: 100%;
+  width: 1400px;
   height: 650px;
   padding: 0px;
-  margin-top: -50px;
+  /* margin-top: -50px; */
 }
 
 .weather {
