@@ -88,6 +88,18 @@ h4 {
 img {
   padding: 1rem;
 }
+.img {
+  height: 400px;
+  width: 400px;
+}
+.map-view {
+  width: 450px;
+  height: 450px;
+}
+.palace-map {
+  width: 550px;
+  height: 400px;
+}
 
 .menu-hide,
 .menu-show {
