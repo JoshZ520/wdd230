@@ -13,7 +13,7 @@
   }
 
   .current-events {
-    grid-column: 1;
+    grid-column: 1/3;
   }
 
   .weather {
