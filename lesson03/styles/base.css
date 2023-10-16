@@ -1,7 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Rubik);
 
 :root {
-  --text-color: #9e6240;
+  --text-color: #81adc8;
 }
 
 body {
@@ -60,7 +60,7 @@ main {
 .join {
   display: block;
   background-color: white;
-  color: #81adc8;
+  color: #9e6240;
   font-size: 1.2rem;
   border-radius: 50px;
 }
@@ -79,7 +79,7 @@ main {
 }
 
 .current-events {
-  background-color: #dea47e;
+  background-color: #492d1d;
   color: var(--text-color);
   padding: 1rem;
 }
