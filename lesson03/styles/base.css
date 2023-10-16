@@ -2,6 +2,7 @@
 
 :root {
   --text-color: #81adc8;
+  --background-color: #492d1d;
 }
 
 body {
@@ -10,7 +11,7 @@ body {
   display: flex;
   flex-direction: column;
   font-family: Rubik, sans-serif;
-  background-color: #492d1d;
+  background-color: var(--background-color);
 }
 /* .dark-mode {
   background-color: black;
@@ -24,7 +25,7 @@ h1 {
 }
 
 a {
-  color: #81adc8;
+  color: var(--text-color);
   text-decoration: none;
 }
 
@@ -73,13 +74,13 @@ main {
 }
 
 .weather {
-  background-color: #492d1d;
+  background-color: var(--background-color);
   color: var(--text-color);
   padding: 1rem;
 }
 
 .current-events {
-  background-color: #492d1d;
+  background-color: var(--background-color);
   color: var(--text-color);
   padding: 1rem;
 }
