@@ -17,12 +17,16 @@ body {
 /* .dark-mode {
   background-color: black;
 } */
+
 h1 {
+  position: relative;
+  z-index: 1;
   background-color: white;
   width: 500px;
   border-radius: 5px;
   padding: 1rem;
   margin: auto;
+  margin-top: 25px;
 }
 
 a {
@@ -54,6 +58,7 @@ nav ul li a {
 }
 
 main {
+  margin: auto;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -74,7 +79,7 @@ main {
   width: 1400px;
   height: 650px;
   padding: 0px;
-  /* margin-top: -50px; */
+  margin-top: -50px;
 }
 
 .weather {
