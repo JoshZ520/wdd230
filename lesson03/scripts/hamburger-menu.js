@@ -13,3 +13,10 @@ showbutton.addEventListener("click", () => {
   showbutton.classList.toggle("showing");
   navmenu.classList.toggle("showing");
 });
+
+const darkmode = document.querySelector("body");
+
+function myFunction() {
+  var element = document.body;
+  element.classList.toggle("dark-mode");
+}
