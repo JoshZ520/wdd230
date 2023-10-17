@@ -8,6 +8,10 @@ darkmode.addEventListener("click", () => {
     document.documentElement.style.setProperty("--head-background", "#1b264f");
     document.documentElement.style.setProperty("--links", "#f5f3f5");
     document.documentElement.style.setProperty("--hover-color", "honeydew");
+    document.documentElement.style.setProperty(
+      "--second-background",
+      "#373f51"
+    );
 
     bodyelt.style.backgroundColor = "black";
     darkmode.textContent = "Light Mode";
@@ -17,6 +21,7 @@ darkmode.addEventListener("click", () => {
     document.documentElement.style.setProperty("--head-background", "#274690");
     document.documentElement.style.setProperty("--links", "#302b27");
     document.documentElement.style.setProperty("--hover-color", "royalblue");
+    document.documentElement.style.setProperty("--second-background", "white");
     bodyelt.style.backgroundColor = "#74c7bd";
     darkmode.textContent = "Dark Mode";
   }

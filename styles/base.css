@@ -6,6 +6,7 @@
   --head-background: #274690;
   --links: #302b27;
   --hover-color: blue;
+  --second-background: #373f51;
 }
 body {
   max-width: 100%;
@@ -28,7 +29,9 @@ header {
   background-color: var(--head-background);
 }
 
-h1 {
+h1,
+h3,
+p {
   color: var(--text-color);
 }
 
@@ -83,7 +86,7 @@ main hr {
   border: 2px black;
   border-style: solid;
   border-radius: 5px;
-  background-color: ghostwhite;
+  background-color: var(--second-background);
 }
 .active {
   background-color: var(--hover-color);
