@@ -24,6 +24,7 @@
     justify-self: center;
     grid-column: 1/3;
   }
+
   .img-section {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
