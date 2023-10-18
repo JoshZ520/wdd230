@@ -7,7 +7,7 @@ darkmode.addEventListener("click", () => {
     document.documentElement.style.setProperty("--text-color", "white");
     document.documentElement.style.setProperty("--head-background", "#1b264f");
     document.documentElement.style.setProperty("--links", "#f5f3f5");
-    document.documentElement.style.setProperty("--hover-color", "honeydew");
+    document.documentElement.style.setProperty("--hover-color", "#2A3C7A");
     document.documentElement.style.setProperty(
       "--second-background",
       "#373f51"
