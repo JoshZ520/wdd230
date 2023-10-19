@@ -16,10 +16,6 @@
     display: grid;
     grid-column: 1;
   }
-  header {
-    display: grid;
-    grid-column: 1;
-  }
 
   .temple {
     width: 960px;
