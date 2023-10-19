@@ -2,8 +2,9 @@
 
 :root {
   --text-color: #81adc8;
-  --main-background-color: #492d1d;
+  --first-background-color: #492d1d;
   --second-background-color: #dea47e;
+  --third-background-color: #cd4631;
 }
 
 body {
@@ -12,11 +13,8 @@ body {
   display: flex;
   flex-direction: column;
   font-family: Rubik, sans-serif;
-  background-color: var(--main-background-color);
+  background-color: var(--first-background-color);
 }
-/* .dark-mode {
-  background-color: black;
-} */
 
 h1 {
   position: relative;
@@ -64,7 +62,7 @@ main {
   text-align: center;
   max-width: 100%;
   align-items: center;
-  background-color: #cd4631;
+  background-color: var(--third-background-color);
 }
 
 .join {
@@ -76,14 +74,14 @@ main {
 }
 
 .hero-img {
-  width: 100%;
+  width: 800px;
   height: auto;
   margin: auto;
   margin-top: -50px;
 }
 
 .weather {
-  background-color: var(--main-background-color);
+  background-color: var(--first-background-color);
   color: var(--text-color);
   padding: 1rem;
   text-align: center;
@@ -94,7 +92,7 @@ main {
 }
 
 .current-events {
-  background-color: var(--main-background-color);
+  background-color: var(--first-background-color);
   color: var(--text-color);
   padding: 1rem;
 }

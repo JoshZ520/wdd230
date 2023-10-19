@@ -12,6 +12,10 @@
     margin: 1rem 0.5rem;
   }
 
+  .temple {
+    width: 960px;
+  }
+
   main h2 {
     grid-column: 1/3;
   }
