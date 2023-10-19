@@ -20,11 +20,14 @@ body {
 #dark-mode {
   background-color: white;
 }
-img {
+#self-img {
   padding-top: 10px;
   height: 200px;
 }
-
+.temple {
+  width: 600px;
+  height: 400px;
+}
 header {
   background-color: var(--head-background);
 }
