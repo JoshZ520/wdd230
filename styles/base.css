@@ -29,6 +29,7 @@ body {
   width: auto;
   /* height: 400px; */
 }
+
 header {
   background-color: var(--head-background);
 }

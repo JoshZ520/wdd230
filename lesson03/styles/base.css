@@ -17,7 +17,6 @@ body {
 }
 
 h1 {
-  position: relative;
   z-index: 1;
   background-color: white;
   width: 500px;
