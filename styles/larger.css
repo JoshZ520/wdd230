@@ -12,6 +12,15 @@
     margin: 1rem 0.5rem;
   }
 
+  #self-img {
+    display: grid;
+    grid-column: 1;
+  }
+  header {
+    display: grid;
+    grid-column: 1;
+  }
+
   .temple {
     width: 960px;
     height: 600px;

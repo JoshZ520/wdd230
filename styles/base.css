@@ -21,8 +21,9 @@ body {
   background-color: white;
 }
 #self-img {
-  padding-top: 10px;
-  height: 200px;
+  padding: 15px;
+  border-radius: 10px;
+  height: 240px;
 }
 .temple {
   width: 600px;
