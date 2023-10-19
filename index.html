@@ -29,11 +29,12 @@
         alt="Myself Josh, and my wife"
       />
       <h1 class="name">Joshua Zobrist</h1>
-      <!-- <img
-        class="temple"
-        src="images/las-vegas-temple.webp"
-        alt="Las Vegas Temple"
-      /> -->
+      <picture>
+        <img
+          class="temple"
+          src="images/las-vegas-temple.webp"
+          alt="Las Vegas Temple"
+      /></picture>
       <button id="dark-mode">Dark Mode</button>
       <nav>
         <button class="menu-hide">X</button
@@ -103,7 +104,9 @@
       </section>
       <section class="card">
         <h3>Weather</h3>
-        <span></span>
+        <span>Temperture: <span id="temperature">34</span></span>
+        <span>Wind Speed: <span id="windspeed">15</span></span>
+        <span>Wind Chilll: <span id="windchill"></span></span>
         <p>Rexburg, Idaho</p>
       </section>
       <iframe

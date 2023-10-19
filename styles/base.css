@@ -26,8 +26,8 @@ body {
   height: 240px;
 }
 .temple {
-  width: 600px;
-  height: 400px;
+  width: auto;
+  /* height: 400px; */
 }
 header {
   background-color: var(--head-background);
