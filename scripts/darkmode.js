@@ -18,7 +18,7 @@ darkmode.addEventListener("click", () => {
   } else {
     document.documentElement.style.setProperty("--background-color", "#74c7bd");
     document.documentElement.style.setProperty("--text-color", "black");
-    document.documentElement.style.setProperty("--head-background", "#274690");
+    document.documentElement.style.setProperty("--head-background", "#3057b0");
     document.documentElement.style.setProperty("--links", "#302b27");
     document.documentElement.style.setProperty("--hover-color", "royalblue");
     document.documentElement.style.setProperty("--second-background", "white");
