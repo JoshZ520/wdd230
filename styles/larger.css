@@ -12,16 +12,22 @@
     margin: 1rem 0.5rem;
   }
 
+  header {
+    width: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
   #self-img {
     display: grid;
     grid-column: 1;
   }
-
   .temple {
-    width: 960px;
-    height: 600px;
+    grid-column: 1/4;
   }
-
+  nav {
+    grid-column: 1/4;
+  }
   main h2 {
     grid-column: 1/3;
   }

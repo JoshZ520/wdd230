@@ -22,6 +22,7 @@
     <title>Josh Zobrist - WDD 230 - Web Frontend Development</title>
   </head>
   <body>
+    <section id="header">
     <header>
       <img
         id="self-img"
@@ -29,13 +30,12 @@
         alt="Myself Josh, and my wife"
       />
       <h1 class="name">Joshua Zobrist</h1>
-      <span id="temple-name"> Las Vegas Temple</span>
-      <picture>
-        <img
-          class="temple"
-          src="images/las-vegas-temple.webp"
-          alt="Las Vegas Temple"
-      /></picture>
+      <picture class="temple">
+        <source
+          srcset="images/las-vegas-temple-small.webp"
+          media="(max-width: 800px)" />
+        <img src="images/las-vegas-temple-large.webp" alt="Las Vegas Temple"
+        <span id="temple-name"> Las Vegas Temple</span></picture>
       <button id="dark-mode">Dark Mode</button>
       <nav>
         <button class="menu-hide">X</button
@@ -60,6 +60,7 @@
         </ul>
       </nav>
     </header>
+  </section>
     <main>
       <h2>WDD 230: Web Frontend Development</h2>
       <hr />
