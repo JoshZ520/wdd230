@@ -17,13 +17,19 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
   }
-
+  #dark-mode {
+    grid-column: 2;
+  }
   #self-img {
     display: grid;
     grid-column: 1;
   }
   .temple {
     grid-column: 1/4;
+  }
+  #temple-name {
+    position: absolute;
+    grid-column: 1;
   }
   nav {
     grid-column: 1/4;
