@@ -96,6 +96,11 @@ main {
   padding: 1rem;
 }
 
+.weather {
+  display: flex;
+  flex-direction: column;
+}
+
 h4 {
   color: black;
 }

@@ -7,6 +7,7 @@
     <link rel="icon" href="favicon.ico" />
     <script src="scripts/getdates.js" defer></script>
     <script src="scripts/hamburger-menu.js" defer></script>
+    <script src="scripts/windchill.js" defer></script>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
@@ -35,6 +36,10 @@
       <h1>Kholinar Chamber of Commerce</h1>
       <!-- <img src="images/kholinar.jpg" /> -->
       <!-- <img class="hero-img" src="images/kholinar.jpg" alt="hero image" /> -->
+      <picture class="hero">
+        <source srcset="images/hero-img.webp" media="(max-width: 800px)" />
+        <img src="images/hero-img.webp" alt="hero image for exercise"
+      </picture>
       <button class="join">Join Us!</button>
     </header>
     <main>
@@ -53,7 +58,10 @@
       </section>
       <section class="weather">
         <h3>Weather</h3>
-        <p>High storm prediction</p>
+        <span>Temperture: <span id="temperature">34</span></span>
+        <span>Wind Speed: <span id="windspeed">15</span></span>
+        <span>Wind Chilll: <span id="windchill"></span></span>
+        <!-- <p> High storm prediction</p> -->
         <p>Kholinar</p>
       </section>
       <section class="img-section">
