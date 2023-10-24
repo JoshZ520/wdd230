@@ -21,15 +21,19 @@
     grid-column: 2;
   }
   #self-img {
+    padding-left: 6rem;
     display: grid;
     grid-column: 1;
   }
   .temple {
+    display: grid;
     grid-column: 1/4;
   }
   #temple-name {
-    position: absolute;
-    grid-column: 1;
+    z-index: 1;
+    margin-bottom: -5rem;
+    position: relative;
+    grid-column: 1/4;
   }
   nav {
     grid-column: 1/4;
