@@ -20,15 +20,18 @@
   #dark-mode {
     grid-column: 2;
   }
+
   #self-img {
     padding-left: 6rem;
     display: grid;
     grid-column: 1;
   }
+
   .temple {
     display: grid;
     grid-column: 1/4;
   }
+
   #temple-name {
     z-index: 1;
     margin-bottom: -5rem;
