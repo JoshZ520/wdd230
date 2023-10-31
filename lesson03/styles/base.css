@@ -73,6 +73,7 @@ nav ul li a {
 }
 
 .hero-img {
+  background-color: var(--third-background-color);
   width: 800px;
   height: auto;
   margin: auto;
