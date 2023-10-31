@@ -48,4 +48,8 @@
   #nav-menu {
     display: flex;
   }
+
+  #disc-main {
+    grid-template-columns: 1fr 1fr;
+  }
 }
