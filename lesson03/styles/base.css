@@ -144,3 +144,9 @@ footer {
   color: black;
   background-color: var(--third-background-color);
 }
+
+#join-main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: var(--third-background-color);
+}
