@@ -1,3 +1,2 @@
 const formdate = new Date();
-document.getElementById("currentdate").value =
-  formdate.toLocaleDateTimeString();
+document.getElementById("timestamp").value = formdate.toLocaleDateTimeString();
