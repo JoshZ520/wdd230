@@ -1,0 +1,17 @@
+{
+  "moveIns": [
+    {
+      "name": "Briggs",
+      "moveInDate": "2022/08/01",
+      "familySize": 4,
+      "visited": false,
+      "members": [
+        { "name": "Quinn", "gender": "M", "birthdate": "1980/01/01" },
+        { "name": "Mary", "gender": "F", "birthdate": "1985/01/02" },
+        { "name": "Harvey", "gender": "M", "birthdate": "2006/05/08" },
+        { "name": "Zoey", "gender": "F", "birthdate": "2015/09/30" }
+      ]
+    },
+    {}
+  ]
+}
