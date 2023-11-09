@@ -138,12 +138,24 @@ footer {
   background-color: var(--second-background-color);
 }
 
+/* Discover Page CSS */
+
 #disc-main {
   display: grid;
   grid-template-columns: 1fr 2fr;
   color: black;
   background-color: var(--third-background-color);
+  margin-right: 3rem;
+  margin-left: 3rem;
 }
+
+.disc-card {
+  width: 50%;
+  text-align: center;
+  border: 1px black solid;
+}
+
+/* Join Page CSS */
 
 #join-main {
   display: grid;
