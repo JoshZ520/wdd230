@@ -1,0 +1,15 @@
+#cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+}
+
+.card {
+  border: 1px black solid;
+  text-align: center;
+  background-color: lightblue;
+  margin: 1rem;
+}
+
+.card img {
+  width: 200px;
+}

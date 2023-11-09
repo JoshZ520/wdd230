@@ -13,6 +13,20 @@ const url =
 
 const cards = document.querySelector("#cards");
 
+function displayProphets(prophets) {
+  prophets.forEach((prophet) => {
+    let section = document.createElement("section");
+    let sectionHTML = `       
+        <h3>${prophet.name} ${prophet.lastname}</h3>
+        <p>Date of Birth: ${prophet.birthdate}</p>
+        <p>Birth Place: ${prophet.birthplace}</p>
+        <img src="${prophet.imageurl}" alt="picture of ${prophet.name} ${prophet.lastname}" />`;
+    section.innerHTML = sectionHTML;
+    section.classList.add("card");
+    cards.appendChild(section);
+  });
+}
+
 async function getProphetData() {
   const response = await fetch(url);
   if (response.ok) {
@@ -23,14 +37,4 @@ async function getProphetData() {
   }
 }
 
-function displayProphets(prophets) {
-  prophets.forEach((prophet) => {
-    let section = document.createElement("section");
-    let sectionHTML = `       
-        <h3>${prophet.name} ${prophet.lastName}</h3>
-        <p>Date of Birth: ${prophet.birthdate}</p>
-        <p>Birth Place: ${prophet.birthplace}</p>
-        <img src="${prophet.imageurl}" alt="picture of ${prophet.name} ${prophet.lastName}" />`;
-    section.innerHTML = sectionHTML;
-  });
-}
+getProphetData();

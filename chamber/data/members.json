@@ -1,0 +1,10 @@
+{
+  "members": {
+    "name": "A",
+    "address": "123 main st",
+    "phone": "485-849-8394",
+    "websiteURL": "https//www.sample.org",
+    "imageURL": "images/example.jpg",
+    "membershipLevel": "gold"
+  }
+}
