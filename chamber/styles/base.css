@@ -2,7 +2,7 @@
 
 :root {
   --text-color: rgb(25, 53, 138);
-  --first-background-color: #f9cb76; /*492d1d F6AE2D*/
+  --first-background-color: #74c7bd; /*492d1d F6AE2D  f9cb76*/
   --second-background-color: #55dde0; /* 55DDE0 33658A dea47e*/
   --third-background-color: #fde9c4; /*F26419 cd4631*/
 }
@@ -88,7 +88,7 @@ nav ul li a {
 }
 
 .current-events {
-  background-color: var(--first-background-color);
+  background-color: #f9cb76;
   color: var(--text-color);
   padding: 1rem;
 }
