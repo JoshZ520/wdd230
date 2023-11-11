@@ -1,7 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Rubik);
 
 :root {
-  --text-color: #81adc8;
+  --text-color: rgb(25, 53, 138);
   --first-background-color: #f9cb76; /*492d1d F6AE2D*/
   --second-background-color: #55dde0; /* 55DDE0 33658A dea47e*/
   --third-background-color: #fde9c4; /*F26419 cd4631*/
@@ -98,18 +98,7 @@ h4 {
 }
 img {
   padding: 1rem;
-}
-.img {
-  height: 400px;
   width: 400px;
-}
-.map-view {
-  width: 450px;
-  height: 450px;
-}
-.palace-map {
-  width: 550px;
-  height: 400px;
 }
 
 .menu-hide,
