@@ -1,11 +1,11 @@
 @import url(https://fonts.googleapis.com/css?family=Rubik);
 
 :root {
-  --text-color: rgb(25, 53, 138);
-  --first-background-color: #74c7bd; /*492d1d F6AE2D  f9cb76*/
+  --text-color: #19358a;
+  --first-background-color: #084a08; /*492d1d F6AE2D  f9cb76*/
   --second-background-color: #55dde0; /* 55DDE0 33658A dea47e*/
   --third-background-color: #fde9c4; /*F26419 cd4631*/
-  --fourth-background-color: #f9cb76;
+  --fourth-background-color: #e0b668;
 }
 
 body {
@@ -18,9 +18,8 @@ body {
 }
 
 h1 {
-  z-index: 1;
-  background-color: white;
   width: 500px;
+  flex: 1;
   border-radius: 5px;
   padding: 1rem;
   margin: auto;
@@ -31,9 +30,8 @@ a {
   color: black;
   text-decoration: none;
 }
-nav {
+header {
   background-color: var(--second-background-color);
-  margin: -16px;
 }
 nav ul {
   display: flex;
@@ -77,8 +75,9 @@ nav ul li a {
   background-color: var(--third-background-color);
   width: 800px;
   height: auto;
-  margin: auto;
-  margin-top: -50px;
+  margin: 20px;
+  align-self: center;
+  /* margin-top: 50px; */
 }
 
 #weather {
@@ -89,6 +88,8 @@ nav ul li a {
   color: var(--text-color);
   display: flex;
   flex-direction: column;
+  box-shadow: 10px 5px 5px darkgreen;
+  margin-top: 10px;
 }
 
 .current-events {
@@ -98,10 +99,11 @@ nav ul li a {
   background-color: var(--fourth-background-color);
   color: var(--text-color);
   padding: 1rem;
+  box-shadow: 10px 5px 5px black;
 }
 
 h4 {
-  color: black;
+  color: white;
 }
 img {
   padding: 1rem;
