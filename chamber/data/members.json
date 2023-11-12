@@ -1,10 +1,60 @@
 {
-  "members": {
-    "name": "Pet Shop",
-    "address": "123 main st",
-    "phone": "485-849-8394",
-    "websiteURL": "https//www.sample.org",
-    "imageURL": "images/example.jpg",
-    "membershipLevel": "gold"
-  }
+  "members": [
+    {
+      "name": "Pet Shop",
+      "address": "534 Main St",
+      "phone": "808-738-7290",
+      "websiteURL": "https//www.petshop.org",
+      "imageURL": "images/Pet_shop.webp",
+      "membershipLevel": "silver"
+    },
+    {
+      "name": "Bakery",
+      "address": "56 North St",
+      "phone": "808-548-6253",
+      "websiteURL": "https//www.KokauaBakery.org",
+      "imageURL": "images/Bakery.webp",
+      "membershipLevel": "gold"
+    },
+    {
+      "name": "French Fry's",
+      "address": "294 Main St",
+      "phone": "808-857-9485",
+      "websiteURL": "https//www.BestFriesinHawaii.com",
+      "imageURL": "images/French_fries.webp",
+      "membershipLevel": "gold"
+    },
+    {
+      "name": "Shaved Ice Shoppe",
+      "address": "620 Stitch Ln",
+      "phone": "808-320-6428",
+      "websiteURL": "https//www.Freezeyourbrainhere.com",
+      "imageURL": "images/Shave_Ice.webp",
+      "membershipLevel": "bronze"
+    },
+    {
+      "name": "Museum of Natural History",
+      "address": "130 Main St",
+      "phone": "808-626-3486",
+      "websiteURL": "https//www.KokauaNHM.org",
+      "imageURL": "images/Museum_NH.webp",
+      "membershipLevel": "non-profit"
+    },
+    {
+      "name": "Beauty Parlor",
+      "address": "615 Pink Rd",
+      "phone": "808-200-6427",
+      "websiteURL": "https//www.beautyparlor.org",
+      "imageURL": "images/Beauty_Parlor.webp",
+      "membershipLevel": "bronze"
+    },
+    {
+      "name": "Costume Shop",
+      "address": "489 Coconut St",
+      "phone": "808-855-9662",
+      "websiteURL": "https//www.Costume-shop.com",
+      "imageURL": "images/Costume_shop.webp",
+      "membershipLevel": "silver"
+    }
+  ]
 }
