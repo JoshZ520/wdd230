@@ -42,7 +42,16 @@
               >Last Name*<input type="text" name="lname" required
             /></label>
             <label class="myinput"
-              >First Name*<input type="text" name="fname" required
+              >Title<input type="text" name="title" pattern="[A-Za-z\s\-]{7,}"
+            /></label>
+            <label class="myinput"
+              ><input type="email" required placeholder="example@mymail.com" />
+            </label>
+            <label class="myinput"
+              >Cell Phone*<input type="tel" name="cellphone" required
+            /></label>
+            <label class="myinput"
+              >Business Name*<input type="text" name="bizname" required
             /></label>
             <label
               ><input id="timestamp" type="hidden" name="timestamp value=""
