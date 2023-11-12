@@ -8,9 +8,8 @@
     grid-template-columns: 2fr 1fr;
   }
 
-  #home-hero {
-    display: flex;
-    flex-direction: column;
+  #hero-section {
+    margin: 20px;
   }
   main ~ section {
     margin: 1rem 0.5rem;
