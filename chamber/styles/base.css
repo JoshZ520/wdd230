@@ -73,6 +73,7 @@ nav ul li a {
   border-radius: 50px;
   margin: 10px;
   justify-self: center;
+  justify-content: center;
 }
 
 .hero-img {
@@ -87,11 +88,10 @@ nav ul li a {
 #weather {
   border: 1px black solid;
   width: 75%;
-  justify-self: center;
+  align-self: center;
   background-color: var(--fourth-background-color);
   color: var(--text-color);
   box-shadow: 10px 5px 5px black;
-  margin-top: 10px;
 }
 
 .current-events {
@@ -105,7 +105,7 @@ nav ul li a {
 }
 
 h4 {
-  color: white;
+  color: black;
 }
 img {
   padding: 1rem;
