@@ -149,7 +149,9 @@ footer {
   margin-right: 3rem;
   margin-left: 3rem;
 }
-
+#disc-text ~ section {
+  justify-items: center;
+}
 .disc-card {
   width: 50%;
   text-align: center;
