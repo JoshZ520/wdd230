@@ -89,9 +89,7 @@ nav ul li a {
   align-self: center;
   background-color: var(--fourth-background-color);
   color: var(--text-color);
-  display: flex;
-  flex-direction: column;
-  box-shadow: 10px 5px 5px darkgreen;
+  box-shadow: 10px 5px 5px black;
   margin-top: 10px;
 }
 
@@ -162,6 +160,6 @@ footer {
 
 #join-main {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
   background-color: var(--third-background-color);
 }

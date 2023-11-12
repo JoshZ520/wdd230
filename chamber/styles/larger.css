@@ -15,28 +15,32 @@
     margin: 1rem 0.5rem;
   }
   .current-events {
-    grid-column: 1/3;
+    grid-column: 1;
+    margin: auto;
   }
 
   .hero-img {
     width: 85%;
   }
 
-  /* #weather {
+  #weather {
     text-align: center;
     width: 300px;
     height: 200px;
-    margin-top: 1rem;
+    margin: auto;
     justify-self: center;
     grid-column: 1/3;
-  } */
+  }
 
   .img-section {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-column: 1/3;
+    margin: auto;
   }
-
+  .img-section img {
+    grid-column: 1/4;
+    width: 350px;
+  }
   .menu-show,
   .menu-hide,
   .menu-show.showing,
