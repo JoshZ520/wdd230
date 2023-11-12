@@ -64,14 +64,15 @@ nav ul li a {
   background-color: var(--first-background-color);
 }
 
-.join {
-  width: 50%;
-  display: block;
+#join-button {
+  width: 25%;
+  display: flex;
   background-color: white;
   color: black;
   font-size: 1.2rem;
   border-radius: 50px;
   margin: 10px;
+  justify-self: center;
 }
 
 .hero-img {
@@ -86,7 +87,7 @@ nav ul li a {
 #weather {
   border: 1px black solid;
   width: 75%;
-  align-self: center;
+  justify-self: center;
   background-color: var(--fourth-background-color);
   color: var(--text-color);
   box-shadow: 10px 5px 5px black;

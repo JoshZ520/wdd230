@@ -22,7 +22,9 @@
   .hero-img {
     width: 85%;
   }
-
+  #join-button {
+    grid-column: 1/3;
+  }
   #weather {
     text-align: center;
     width: 300px;
