@@ -107,7 +107,7 @@ nav ul li a {
 h4 {
   color: black;
 }
-img {
+.img-section img {
   padding: 1rem;
   width: 400px;
 }
@@ -156,7 +156,9 @@ footer {
   text-align: center;
   border: 1px black solid;
 }
-
+.disc-img-sect img {
+  width: 400px;
+}
 /* Join Page CSS */
 
 #join-main {
@@ -168,10 +170,17 @@ footer {
 /* Directory Page CSS */
 
 #direct-main {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr);
+  display: flex;
+  flex-direction: column;
 }
 
 .direct-cards {
   background-color: #e0b668;
+}
+#direct-data {
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+}
+
+#direct-data img {
+  width: 400px;
 }
