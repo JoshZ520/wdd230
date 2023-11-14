@@ -164,3 +164,14 @@ footer {
   grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
   background-color: var(--third-background-color);
 }
+
+/* Directory Page CSS */
+
+#direct-main {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr);
+}
+
+.direct-cards {
+  background-color: #e0b668;
+}
