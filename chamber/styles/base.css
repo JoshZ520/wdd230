@@ -170,15 +170,17 @@ footer {
 /* Directory Page CSS */
 
 #direct-main {
-  display: flex;
+  display: grid;
   flex-direction: column;
+}
+
+#direct-data {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
 }
 
 .direct-cards {
   background-color: #e0b668;
-}
-#direct-data {
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
 }
 
 #direct-data img {
