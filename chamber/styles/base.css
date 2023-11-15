@@ -166,6 +166,12 @@ footer {
   grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
   background-color: var(--third-background-color);
 }
+.join-text {
+  display: block;
+}
+.join-text li {
+  display: list-item;
+}
 
 /* Directory Page CSS */
 
