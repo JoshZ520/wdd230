@@ -39,7 +39,6 @@
     margin: auto;
   }
   .img-section img {
-    grid-column: 1/4;
     width: 350px;
   }
   .menu-show,

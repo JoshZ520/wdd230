@@ -25,9 +25,10 @@
     />
     <script src="scripts/getdates.js" defer></script>
     <script src="scripts/hamburger-menu.js" defer></script>
-    <script src="scripts/windchill.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
     <script src="scripts/darkmode.js" defer></script>
     <script src="scripts/sites-visit.js" defer></script>
+    <script src="scripts/meetgreet.js" defer></script>
     <link rel="stylesheet" href="styles/base.css" />
     <link rel="stylesheet" href="styles/meduim.css" />
     <link rel="stylesheet" href="styles/larger.css" />
@@ -54,6 +55,10 @@
     </header>
 
     <main id="home-main">
+      <p id="meetgreet">
+        Join us for a meet and greet Wednesday night at 7pm!
+        <button id="close-greet">X</button>
+      </p>
       <section id="hero-section">
         <img
           class="hero-img"
@@ -74,9 +79,9 @@
       </section>
       <section id="weather">
         <h3>Weather</h3>
-        <span>Temperture: <span id="temperature">64</span></span>
-        <span>Wind Speed: <span id="windspeed">2</span></span>
-        <span>Wind Chilll: <span id="windchill"></span></span>
+        <span><span id="temp"></span></span>
+        <span>Wind Speed: <span id="windspeed"></span></span>
+        <span>3 day forecast<span id="three-days"></span></span>
         <p>Kokaua</p>
       </section>
       <section class="img-section">

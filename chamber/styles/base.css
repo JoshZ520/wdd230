@@ -76,6 +76,10 @@ nav ul li a {
   justify-content: center;
 }
 
+#meetgreet {
+  display: none;
+  width: 100%;
+}
 .hero-img {
   background-color: var(--third-background-color);
   width: 800px;
@@ -107,11 +111,15 @@ nav ul li a {
 h4 {
   color: black;
 }
+
 .img-section img {
   padding: 1rem;
-  width: 400px;
 }
-
+.img-section a {
+  margin: 20px;
+  border: 1px solid black;
+  box-shadow: 10px 5px 5px black;
+}
 .menu-hide,
 .menu-show {
   display: none;
