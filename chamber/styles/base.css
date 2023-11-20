@@ -186,18 +186,24 @@ footer {
 /* Directory Page CSS */
 
 #direct-main {
-  display: grid;
+  display: flex;
+  flex-direction: column;
 }
 
 #direct-data {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 .direct-cards {
   background-color: #e0b668;
 }
-
+#direct-data section {
+  border: 1px solid black;
+  margin: 20px;
+  text-align: center;
+  width: 325px;
+}
 #direct-data img {
-  width: 400px;
+  width: 100%;
 }
