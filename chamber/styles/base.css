@@ -191,11 +191,6 @@ footer {
   flex-direction: column;
 }
 
-#direct-data {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-}
-
 .direct-cards {
   background-color: #e0b668;
 }

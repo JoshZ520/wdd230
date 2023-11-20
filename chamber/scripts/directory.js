@@ -1,3 +1,25 @@
+var gridSelector = document.querySelector("#direct-grid");
+var listSelector = document.querySelector("#direct-list");
+var directoryData = document.querySelector("#direct-data");
+
+gridSelector.addEventListener("click", () => {
+  if (!gridSelector.classList.contains("active")) {
+    gridSelector.classList.add("active");
+    listSelector.classList.remove("active");
+    directoryData.classList.add("direct-cards");
+    directoryData.classList.remove("direct-list");
+  }
+});
+
+listSelector.addEventListener("click", () => {
+  if (!listSelector.classList.contains("active")) {
+    listSelector.classList.add("active");
+    gridSelector.classList.remove("active");
+    directoryData.classList.add("direct-list");
+    directoryData.classList.remove("direct-cards");
+  }
+});
+
 const cards = document.querySelector(".direct-cards");
 
 function displayMembers(members) {
