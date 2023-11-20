@@ -6,6 +6,7 @@
   --second-background-color: #55dde0; /* 55DDE0 33658A dea47e*/
   --third-background-color: #fde9c4; /*F26419 cd4631*/
   --fourth-background-color: #e0b668;
+  --box-color: #a77518;
 }
 
 body {
@@ -97,7 +98,7 @@ nav ul li a {
   align-self: center;
   background-color: var(--fourth-background-color);
   color: var(--text-color);
-  box-shadow: 10px 5px 5px black;
+  box-shadow: 10px 5px 5px var(--box-color);
 }
 
 .current-events {
@@ -107,7 +108,7 @@ nav ul li a {
   background-color: var(--fourth-background-color);
   color: var(--text-color);
   padding: 1rem;
-  box-shadow: 10px 5px 5px black;
+  box-shadow: 10px 5px 5px var(--box-color);
 }
 
 h4 {
@@ -120,7 +121,7 @@ h4 {
 .img-section a {
   margin: 20px;
   border: 1px solid black;
-  box-shadow: 10px 5px 5px black;
+  box-shadow: 10px 5px 5px var(--box-color);
 }
 .menu-hide,
 .menu-show {
@@ -199,11 +200,24 @@ footer {
   background-color: #e0b668;
 }
 #direct-data section {
-  border: 1px solid black;
+  border: 2px solid black;
+  box-shadow: 10px 5px 5px var(--box-color);
   margin: 20px;
   text-align: center;
   width: 325px;
 }
 #direct-data img {
   width: 100%;
+}
+
+#direct-select button {
+  height: 50px;
+  width: 100px;
+  border-radius: 20px;
+  color: black;
+  background-color: var(--first-background-color);
+}
+
+#direct-select button.active {
+  background-color: var(--box-color);
 }
