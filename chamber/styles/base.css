@@ -187,7 +187,6 @@ footer {
 
 #direct-main {
   display: grid;
-  flex-direction: column;
 }
 
 #direct-data {
