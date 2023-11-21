@@ -1,5 +1,5 @@
-const LAT = "43.8866";
-const LON = "-111.6777";
+const LAT = "21.918548";
+const LON = "-159.6071262";
 const APIKEY = "06eef557d0797fb1b04ad9ce8f17ea02";
 const apiURL = `https://api.openweathermap.org/data/2.5/weather?lat=${LAT}&lon=${LON}&appid=${APIKEY}&units=imperial`;
 //const apiURL = "data/weather.json";
@@ -65,5 +65,5 @@ function showForecast(forecasts) {
       .reduce((prev, next) => (prev.main.temp < next.main.temp ? prev : next))
   );
 
-  // weatherElt = document.querySelector("body section");
+  weatherElt = document.querySelector("body section");
 }
