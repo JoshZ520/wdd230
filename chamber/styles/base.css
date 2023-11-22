@@ -10,7 +10,7 @@
 }
 
 body {
-  max-width: 1200px;
+  max-width: 100%;
   margin: 0 auto;
   text-align: center;
   display: flex;
@@ -193,6 +193,10 @@ footer {
 
 .direct-cards {
   background-color: #e0b668;
+}
+#direct-data {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
 }
 #direct-data section {
   border: 2px solid black;

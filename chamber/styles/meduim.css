@@ -32,8 +32,4 @@
   #disc-main {
     grid-template-columns: 1fr 2fr;
   }
-  #direct-data {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
 }
