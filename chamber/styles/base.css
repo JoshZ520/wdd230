@@ -221,3 +221,29 @@ footer {
 #direct-select button.active {
   background-color: var(--box-color);
 }
+
+#direct-list {
+  /* display: grid; */
+  /* justify-items: center; */
+  padding: 1rem;
+}
+
+#direct-list section img {
+  display: none;
+}
+
+#direct-list section {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 70%;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+#direct-list section:nth-child(odd) {
+  background-color: var(--first-background-color);
+}
+
+#direct-list section:nth-child(even) {
+  background-color: var(--third-background-color);
+}
