@@ -160,9 +160,10 @@ footer {
   margin-left: 3rem;
 }
 #disc-text ~ section {
-  justify-items: center;
+  align-items: center;
 }
 .disc-card {
+  /* margin-left: 150px; */
   width: 50%;
   text-align: center;
   border: 1px black solid;

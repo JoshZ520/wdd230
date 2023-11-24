@@ -66,7 +66,7 @@ function showForecast(forecasts) {
       .reduce((prev, next) => (prev.main.temp < next.main.temp ? prev : next))
   );
 
-  weatherElt = document.querySelector("body section ");
+  weatherElt = document.querySelector("body span");
   for (let i = 0; i < 3; i++) {
     let newsection = document.createElement("section");
     newsection.innerHTML = `<h2>${dates[i]}</h2><p>High: ${highTemps[
