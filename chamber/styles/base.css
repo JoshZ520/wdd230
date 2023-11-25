@@ -10,7 +10,8 @@
 }
 
 body {
-  max-width: 1200px;
+  max-width: 100%;
+  width: 1200px;
   margin: 0 auto;
   text-align: center;
   display: flex;
@@ -33,6 +34,7 @@ a {
   text-decoration: none;
 }
 header {
+  width: 100%;
   background-color: var(--second-background-color);
 }
 nav ul {
@@ -83,13 +85,15 @@ nav ul li a {
   border: 1px solid black;
   background-color: var(--third-background-color);
 }
+#hero-section {
+  width: 100%;
+}
 .hero-img {
   background-color: var(--third-background-color);
-  width: 800px;
+  width: 80%;
   height: auto;
   margin: 20px;
-  align-self: center;
-  padding: 50px;
+  padding: 25px;
 }
 
 #weather {
@@ -116,6 +120,7 @@ h4 {
 }
 
 .img-section img {
+  width: 100%;
   padding: 1rem;
 }
 .img-section a {

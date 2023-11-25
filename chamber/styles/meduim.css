@@ -14,10 +14,10 @@
   .weather {
     grid-column: 2/3;
   }
-  /* .img-section {
+  .img-section {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-  } */
+  }
 
   .menu-show,
   .menu-hide,
