@@ -34,8 +34,13 @@
     margin-top: 20px;
     justify-self: center;
     grid-column: 1/3;
+    display: grid;
   }
 
+  #three-days {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
   .img-section {
     width: 100%;
     display: grid;
