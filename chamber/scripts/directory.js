@@ -1,5 +1,5 @@
 var gridSelector = document.querySelector("#direct-grid");
-var listSelector = document.querySelector("#direct-list");
+var listSelector = document.querySelector("#direct-rows");
 var directoryData = document.querySelector("#direct-data");
 
 gridSelector.addEventListener("click", () => {

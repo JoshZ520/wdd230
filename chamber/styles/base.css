@@ -200,18 +200,18 @@ footer {
 .direct-cards {
   background-color: #e0b668;
 }
-#direct-data {
+.direct-cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
 }
-#direct-data section {
+.direct-cards section {
   border: 2px solid black;
   box-shadow: 10px 5px 5px var(--box-color);
   margin: 20px;
   text-align: center;
   width: 325px;
 }
-#direct-data img {
+.direct-cards img {
   width: 100%;
 }
 
@@ -227,17 +227,17 @@ footer {
   background-color: var(--box-color);
 }
 
-#direct-list {
-  /* display: grid; */
-  /* justify-items: center; */
+.direct-list {
+  display: grid;
+  justify-items: center;
   padding: 1rem;
 }
 
-#direct-list section img {
+.direct-list section img {
   display: none;
 }
 
-#direct-list section {
+.direct-list section {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   width: 70%;
@@ -245,10 +245,10 @@ footer {
   padding-right: 1rem;
 }
 
-#direct-list section:nth-child(odd) {
+.direct-list section:nth-child(odd) {
   background-color: var(--first-background-color);
 }
 
-#direct-list section:nth-child(even) {
+.direct-list section:nth-child(even) {
   background-color: var(--third-background-color);
 }
