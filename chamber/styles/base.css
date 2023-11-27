@@ -167,14 +167,15 @@ footer {
 #disc-text ~ section {
   align-items: center;
 }
+
 .disc-card {
-  margin-left: 75px;
   width: 100%;
   text-align: center;
   border: 1px black solid;
 }
 .disc-img-sect img {
-  width: 400px;
+  width: 375px;
+  margin-top: 20px;
 }
 /* #current-events {
   width: 200px;

@@ -62,7 +62,6 @@
   }
 
   #disc-main {
-    margin-left: 150px;
     display: grid;
     grid-template-columns: 1fr 3fr;
   }
