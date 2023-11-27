@@ -157,8 +157,8 @@ footer {
 /* Discover Page CSS */
 
 #disc-main {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
+  display: flex;
+  flex-direction: column;
   color: black;
   background-color: var(--third-background-color);
   margin-right: 3rem;
@@ -168,14 +168,17 @@ footer {
   align-items: center;
 }
 .disc-card {
-  margin-left: 150px;
-  width: 50%;
+  margin-left: 75px;
+  width: 100%;
   text-align: center;
   border: 1px black solid;
 }
 .disc-img-sect img {
   width: 400px;
 }
+/* #current-events {
+  width: 200px;
+} */
 /* Join Page CSS */
 
 #join-main {
