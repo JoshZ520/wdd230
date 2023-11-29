@@ -1,0 +1,10 @@
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+/* header styling */
+#header {
+  grid-template-columns: 1fr 1fr;
+  display: grid;
+}
