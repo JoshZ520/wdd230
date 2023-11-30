@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="scripts/hamburger.js" defer></script>
     <link rel="stylesheet" href="styles/base.css" />
     <link rel="stylesheet" href="styles/meduim.css" />
     <link rel="stylesheet" href="styles/larger.css" />
@@ -10,19 +11,39 @@
   </head>
   <body>
     <header id="header">
-      <img src="https://placekitten.com/100/100" />
+      <img class="logo" src="https://placekitten.com/100/100" />
+      <h3 id="company-name">Bountiful Foods</h3>
       <nav>
-        <ul class="navi">
+        <button class="menu-hide">X</button>
+        <button class="menu-show showing">&equiv;</button>
+        <ul id="nav-menu">
           <li>
-            <a>Home</a>
+            <a href="index.html">Home</a>
           </li>
-          <li><a>Smoothes</a></li>
-          <li><a>About Us</a></li>
+          <li><a href="menu.html">Smoothies</a></li>
+          <li><a href="aboutus.html">About Us</a></li>
         </ul>
+        <button>Make a Smoothie with us!</button>
       </nav>
     </header>
-    <button>Make a Smoothe with us!</button>
-    <main></main>
+    <main>
+      <h1 class="hero-txt">Slogan on hero image</h1>
+      <img
+        id="hero-img"
+        src="https://placekitten.com/800/400"
+        alt="hero image for Bountiful Foods"
+      />
+      <section id="smoothies">
+        <h2>What makes our Smoothies so great!</h2>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam
+          aliquid ratione cum officia, voluptatem iste beatae amet esse quos
+          dolorum rerum eius pariatur minus similique ea vitae quaerat voluptate
+          natus perferendis rem molestias temporibus. Quos iste rem earum
+          reiciendis commodi.
+        </p>
+      </section>
+    </main>
     <footer>
       <a> Facebook</a>
     </footer>

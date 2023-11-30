@@ -1,0 +1,31 @@
+@media screen and (min-width: 800px) {
+  body {
+    width: 100%;
+  }
+  #header {
+    grid-template-columns: 0.5fr 1fr 3fr;
+    display: grid;
+  }
+
+  .menu-show,
+  .menu-hide,
+  .menu-show.showing,
+  .menu-hide.showing {
+    display: none;
+  }
+
+  #nav-menu {
+    display: flex;
+  }
+  nav ul {
+    flex-direction: row;
+  }
+
+  #hero-img {
+    width: 90%;
+  }
+  #smoothies {
+    grid-template-columns: 1fr 2fr;
+    display: grid;
+  }
+}
