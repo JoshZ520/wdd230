@@ -38,6 +38,9 @@ header {
 }
 
 #nav-menu {
+  margin: 10px;
+  margin-top: 45px;
+  padding-inline-start: 0px;
   display: none;
 }
 
@@ -81,3 +84,5 @@ main {
 #smoothies h2 {
   text-align: center;
 }
+
+/* footer stylings */

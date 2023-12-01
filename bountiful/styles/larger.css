@@ -28,4 +28,14 @@
     grid-template-columns: 1fr 2fr;
     display: grid;
   }
+
+  #links {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  #foot-txt {
+    text-align: center;
+    display: grid;
+    grid: 1/4;
+  }
 }
