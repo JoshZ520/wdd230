@@ -11,6 +11,7 @@ body {
 }
 
 /* header styling */
+
 header {
   background-color: aquamarine;
 }
@@ -20,11 +21,13 @@ header {
   align-self: center;
   padding: 20px;
 }
+
 #company-name {
   text-align: center;
   justify-self: center;
   align-self: center;
 }
+
 /* menu styling */
 
 .menu-hide,
@@ -57,6 +60,7 @@ nav ul {
   display: flex;
   flex-direction: column;
 }
+
 nav ul li {
   list-style-type: none;
   display: block;
@@ -75,11 +79,13 @@ main {
   display: flex;
   flex-direction: column;
 }
+
 /* hero image styling */
 
 .hero-txt {
   align-self: center;
 }
+
 #hero-img {
   align-self: center;
   width: 100%;

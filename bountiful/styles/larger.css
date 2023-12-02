@@ -36,6 +36,7 @@
   }
 
   #foot-txt {
+    display: grid;
     text-align: center;
   }
 
@@ -47,5 +48,8 @@
   #resources {
     display: grid;
     grid-column: 2;
+  }
+  #mod #lastmodified {
+    display: grid;
   }
 }
