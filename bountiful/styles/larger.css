@@ -38,4 +38,12 @@
     text-align: center;
     display: grid;
   }
+  #footer-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  #resources {
+    display: grid;
+    grid-column: 2;
+  }
 }
