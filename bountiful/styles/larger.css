@@ -36,19 +36,17 @@
   }
 
   #foot-txt {
+    grid-template-columns: 1fr 1fr 2fr;
     display: grid;
     text-align: center;
-  }
-
-  #footer-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
   }
 
   #resources {
     display: grid;
   }
-  #mod #lastmodified {
-    display: grid;
+  #container,
+  #lastmodified,
+  #currentyear {
+    text-align: center;
   }
 }
