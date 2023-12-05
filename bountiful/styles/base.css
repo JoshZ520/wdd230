@@ -106,11 +106,14 @@ footer {
 #container,
 #lastmodified,
 #currentyear,
-#foot-txt,
-#links {
+#foot-txt {
   text-align: center;
 }
 
+#links {
+  text-align: center;
+  padding-top: 20px;
+}
 #links a {
   margin: 1rem;
   text-align: center;
