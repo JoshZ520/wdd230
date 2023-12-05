@@ -36,7 +36,7 @@
   }
 
   #foot-txt {
-    grid-template-columns: 1fr 1fr 2fr;
+    grid-template-columns: 1fr 1fr;
     display: grid;
     text-align: center;
   }
@@ -44,6 +44,7 @@
   #resources {
     display: grid;
   }
+
   #container,
   #lastmodified,
   #currentyear {

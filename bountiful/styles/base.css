@@ -100,3 +100,16 @@ main {
 footer {
   width: 100%;
 }
+
+#container,
+#lastmodified,
+#currentyear,
+#foot-txt,
+#links {
+  text-align: center;
+}
+
+#links a {
+  margin: 1rem;
+  text-align: center;
+}
