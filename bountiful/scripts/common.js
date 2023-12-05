@@ -1,3 +1,9 @@
+//dates for website
+let today = new Date();
+document.querySelector("#currentyear").textContent = today.getFullYear();
+document.querySelector("#lastmodified").textContent = document.lastModified;
+
+// hamburger menu
 const hidebutton = document.querySelector(".menu-hide");
 const showbutton = document.querySelector(".menu-show");
 const navmenu = document.querySelector("#nav-menu");
