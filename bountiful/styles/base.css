@@ -88,6 +88,11 @@ main {
   display: flex;
   flex-direction: column;
 }
+
+#smoothies {
+  padding: 15px;
+}
+
 #weather {
   text-align: center;
 }
