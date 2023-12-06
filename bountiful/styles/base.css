@@ -17,6 +17,7 @@ header {
 }
 
 .logo {
+  border-radius: 50px;
   justify-self: center;
   align-self: center;
   padding: 20px;
@@ -82,6 +83,10 @@ main {
   text-align: center;
 }
 
+iframe {
+  width: 100%;
+}
+
 /* hero image styling */
 
 .hero-txt {
@@ -117,4 +122,13 @@ footer {
 #links a {
   margin: 1rem;
   text-align: center;
+}
+
+#resources ul {
+  padding-inline-start: 0px;
+}
+
+#resources ul li {
+  text-align: center;
+  list-style-type: none;
 }
