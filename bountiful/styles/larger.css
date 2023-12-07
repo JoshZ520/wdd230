@@ -35,15 +35,15 @@
     text-align: center;
   }
 
-  #foot-txt {
+  /* #foot-txt {
     grid-template-columns: 1fr 1fr;
     display: grid;
     text-align: center;
-  }
+  } */
 
-  #resources {
+  /* #resources {
     display: grid;
-  }
+  } */
 
   #container,
   #lastmodified,
