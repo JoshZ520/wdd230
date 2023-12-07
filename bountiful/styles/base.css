@@ -150,3 +150,9 @@ footer {
   text-align: center;
   list-style-type: none;
 }
+
+/* Menu styling */
+
+#menu-heading {
+  text-align: center;
+}
