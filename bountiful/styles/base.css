@@ -7,6 +7,7 @@
 }
 
 a {
+  color: blue;
   text-decoration: none;
 }
 
@@ -99,8 +100,7 @@ main {
 }
 
 iframe {
-  padding-bottom: 20px;
-  border: 1px solid black;
+  padding-bottom: 25px;
   width: 100%;
 }
 
