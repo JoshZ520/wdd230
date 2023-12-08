@@ -44,40 +44,40 @@ async function getTheWeather() {
 
 getTheWeather();
 
-const weatherURL = `https://api.openweathermap.org/data/2.5/forecast?lat=${LAT}&lon=${LON}&appid=${APIKEY}&units=imperial`;
-const ONE_DAY = 24 * 60 * 60 * 1000;
+// const weatherURL = `https://api.openweathermap.org/data/2.5/forecast?lat=${LAT}&lon=${LON}&appid=${APIKEY}&units=imperial`;
+// const ONE_DAY = 24 * 60 * 60 * 1000;
 
-function showForecast(forecasts) {
-  console.log(forecasts);
-  let dates = [];
-  let mydate = new Date();
-  for (let i = 0; i < 3; i++) {
-    mydate = new Date(mydate.getTime() + ONE_DAY);
-    nextdate = mydate.toISOString().slice(0, 10);
-    dates.push(nextdate);
-  }
-  console.log(dates);
+// function showForecast(forecasts) {
+//   console.log(forecasts);
+//   let dates = [];
+//   let mydate = new Date();
+//   for (let i = 0; i < 3; i++) {
+//     mydate = new Date(mydate.getTime() + ONE_DAY);
+//     nextdate = mydate.toISOString().slice(0, 10);
+//     dates.push(nextdate);
+//   }
+//   console.log(dates);
 
-  weatherElt = document.getElementById("three-day");
-  for (let i = 0; i < 3; i++) {
-    let newsection = document.createElement("section");
-    newsection.innerHTML = `<h2>${dates[i]}</h2> <img id="weather-icon" src=""/>`;
-    weatherElt.append(newsection);
-  }
-}
+//   weatherElt = document.getElementById("three-day");
+//   for (let i = 0; i < 3; i++) {
+//     let newsection = document.createElement("section");
+//     newsection.innerHTML = `<h2>${dates[i]}</h2> <img id="weather-icon" src="" alt=""/>`;
+//     weatherElt.append(newsection);
+//   }
+// }
 
-async function fetchForecast() {
-  try {
-    const response = await fetch(weatherURL);
-    if (response.ok) {
-      const data = await response.json();
-      showForecast(data.list);
-    } else {
-      throw Error(await response.text());
-    }
-  } catch (error) {
-    console.log(error);
-  }
-}
+// async function fetchForecast() {
+//   try {
+//     const response = await fetch(weatherURL);
+//     if (response.ok) {
+//       const data = await response.json();
+//       showForecast(data.list);
+//     } else {
+//       throw Error(await response.text());
+//     }
+//   } catch (error) {
+//     console.log(error);
+//   }
+// }
 
-fetchForecast();
+// fetchForecast();

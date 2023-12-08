@@ -3,7 +3,8 @@
 :root {
   --header-bg-color: #73d2de;
   --main-bg-color: #d81159;
-  --foot-color: #218380;
+  --foot-color: #4aabaf;
+  --sec-bg-color: #ee2f75;
 }
 
 a {
@@ -22,6 +23,7 @@ body {
 /* header styling */
 
 header {
+  width: 100%;
   background-color: var(--header-bg-color);
 }
 
@@ -82,7 +84,7 @@ nav ul li a {
   display: block;
 }
 
-/*main styling */
+/* home main styling */
 
 main {
   background-color: var(--main-bg-color);
@@ -91,7 +93,7 @@ main {
 }
 
 #smoothies {
-  background-color: #ee2f75;
+  background-color: var(--sec-bg-color);
   padding: 15px;
 }
 
@@ -126,6 +128,10 @@ footer {
   width: 100%;
 }
 
+footer a {
+  color: white;
+}
+
 #container,
 #lastmodified,
 #currentyear,
@@ -155,4 +161,23 @@ footer {
 
 #menu-heading {
   text-align: center;
+}
+
+/* About Us */
+
+#about-main {
+  width: 100%;
+  text-align: center;
+}
+
+/* #about-main h1 {
+  text-align: center;
+} */
+
+#about-main p {
+  padding: 20px;
+}
+
+#about-main p:nth-child(even) {
+  background-color: var(--sec-bg-color);
 }
