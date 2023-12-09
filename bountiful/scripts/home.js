@@ -11,20 +11,19 @@ function displayWeather(weatherData) {
   // const iconsrc = `https://openweathermap.org/img/wn/${weatherData.weather[0].icon}@2x.png`
   const iconsrc = `https://openweathermap.org/img/wn/${weatherData.weather[0].icon}.png`;
   const desc = weatherData.weather[0].description;
-  const windSpeed = weatherData.wind.speed.toFixed(0);
   const temperature = weatherData.main.temp.toFixed(0);
 
-  //Set up the weather icon
-  let weatherIcon = document.getElementById("weather-icon");
-  weatherIcon.setAttribute("src", iconsrc);
-  weatherIcon.setAttribute("alt", desc);
+  let weatherTemp = document.getElementById("temperature");
+  weatherTemp.innerHTML = `${temperature}&deg;F`;
 
   //Set up the weather description
   let weatherDesc = document.getElementById("weather-desc");
   weatherDesc.innerHTML = `${desc}`;
 
-  let weatherTemp = document.getElementById("temp");
-  weatherTemp.innerHTML = `${temperature}&deg;F | ${windSpeed} mph wind`;
+  //Set up the weather icon
+  let weatherIcon = document.getElementById("weather-icon");
+  weatherIcon.setAttribute("src", iconsrc);
+  weatherIcon.setAttribute("alt", desc);
 }
 
 async function getTheWeather() {
