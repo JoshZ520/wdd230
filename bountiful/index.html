@@ -15,7 +15,6 @@
       <img class="logo" src="images/logo_img.webp" />
       <h3 id="company-name">Bountiful Foods</h3>
       <nav>
-        <button>Make Smoothies Here!</button>
         <button class="menu-hide">X</button>
         <button class="menu-show showing">&equiv;</button>
         <ul id="nav-menu">
@@ -25,15 +24,20 @@
           <li><a href="menu.html">Smoothies</a></li>
           <li><a href="aboutus.html">About Us</a></li>
         </ul>
+        <a href="menu.html"><button>Make Smoothies Here!</button></a>
       </nav>
     </header>
     <main>
       <h1 class="hero-txt">Fresh flavors in every swirl!</h1>
-      <img
-        id="hero-img"
-        src="images/sml_smoothie_hero.webp"
-        alt="hero image for Bountiful Foods"
-      />
+      <picture>
+        <source
+          media="(min-width:800px)"
+          srcset="images/lrg-smoothie-hero.webp" />
+        <img
+          id="hero-img"
+          src="images/sml_smoothie_hero.webp"
+          alt="hero image for Bountiful Foods"
+      /></picture>
       <section id="smoothies">
         <h2>What makes our Smoothies so great!</h2>
         <p>

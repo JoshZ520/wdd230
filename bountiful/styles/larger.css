@@ -21,7 +21,11 @@
     flex-direction: row;
   }
 
+  picture {
+    display: grid;
+  }
   #hero-img {
+    justify-self: center;
     width: 90%;
   }
   #smoothies {
