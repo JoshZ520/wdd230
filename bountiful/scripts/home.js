@@ -55,29 +55,22 @@ function showForecast(forecasts) {
   }
   console.log(dates);
 
-  highTemps = dates.map((date) =>
+  let weatherDescription = dates.map((date) =>
     forecasts
       .filter((x) => x.dt_txt.startsWith(date) && x.dt_txt.endsWith("09:00:00"))
-      .reduce((prev, next) => (prev.main.temp < next.main.temp ? prev : next))
-  );
-  let forecastImg = dates.map((dates) =>
-    forecasts
-      .filter(
-        (x) => x.dt_txt.startsWith(dates) && x.dt_txt.endsWith("09:00:00")
-      )
-      .reduce((currentObj) => currentObj.weather.icon)
+      .reduce((currentObj) => currentObj.weather.description)
   );
 
-  lowTemps = dates.map((date) =>
+  let forecastIcon = dates.map((date) =>
     forecasts
-      .filter((x) => x.dt_txt.startsWith(date))
-      .reduce((prev, next) => (prev.main.temp < next.main.temp ? prev : next))
+      .filter((x) => x.dt_txt.startsWith(date) && x.dt_txt.endsWith("09:00:00"))
+      .reduce((currentObj) => currentObj.weather.icon)
   );
 
   let weatherElt = document.querySelector("#three-day");
   for (let i = 0; i < 3; i++) {
     let newsection = document.createElement("section");
-    newsection.innerHTML = `<h2>${dates[i]}</h2> <img id="weather-icon" src="https://openweathermap.org/img/wn/${forecastImg[i].weather[0].icon}/>`;
+    newsection.innerHTML = `<h2>${dates[i]}</h2> <p>${weatherDescription[i].weather[0].description}</p> <img src="https://openweathermap.org/img/wn/${forecastIcon[i].weather[0].icon}" alt="${weatherDescription[i].weather[0].description}">`;
     weatherElt.append(newsection);
   }
 }
