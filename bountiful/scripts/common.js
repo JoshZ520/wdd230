@@ -32,7 +32,7 @@ if (window.location.href.includes("confirmation.html")) {
 }
 
 const storedSmoothies = localStorage.getItem("smoothieCount");
-const smoothieId = document.getElementById("smoothies-made");
+const smoothieId = document.getElementById("smoothies-made") || 0;
 
 if (storedSmoothies) {
   smoothieId.textContent = storedSmoothies;
