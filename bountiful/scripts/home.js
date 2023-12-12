@@ -49,7 +49,7 @@ getTheWeather();
 const weatherURL = `https://api.openweathermap.org/data/2.5/forecast?lat=${LAT}&lon=${LON}&appid=${APIKEY}&units=imperial`;
 const ONE_DAY = 24 * 60 * 60 * 1000;
 function showForecast(forecasts) {
-  console.log(forecasts);
+  // console.log(forecasts);
   let dates = [];
   let mydate = new Date();
   for (let i = 0; i < 3; i++) {
@@ -57,7 +57,7 @@ function showForecast(forecasts) {
     nextdate = mydate.toISOString().slice(0, 10);
     dates.push(nextdate);
   }
-  console.log(dates);
+  // console.log(dates);
 
   let weatherDescription = dates.map((date) =>
     forecasts

@@ -101,9 +101,9 @@ main {
   text-align: center;
 }
 
-iframe {
-  padding: 10px 25px 0px 0px;
-  width: 100%;
+#drinks {
+  background-color: var(--sec-bg-color);
+  text-align: center;
 }
 
 /* hero image styling */
@@ -168,6 +168,19 @@ footer a {
 #about-main {
   width: 100%;
   text-align: center;
+}
+#img-container {
+  display: block;
+  align-items: center;
+}
+#smoothie-pic,
+#beach-pic {
+  align-self: center;
+  max-width: 100%;
+}
+
+iframe {
+  width: 100%;
 }
 
 /* #about-main h1 {
