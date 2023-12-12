@@ -11,19 +11,20 @@ function displayWeather(weatherData) {
   // const iconsrc = `https://openweathermap.org/img/wn/${weatherData.weather[0].icon}@2x.png`
   const iconsrc = `https://openweathermap.org/img/wn/${weatherData.weather[0].icon}.png`;
   const desc = weatherData.weather[0].description;
+  const windSpeed = weatherData.wind.speed.toFixed(0);
   const temperature = weatherData.main.temp.toFixed(0);
-
-  let weatherTemp = document.getElementById("temperature");
-  weatherTemp.innerHTML = `${temperature}&deg;F`;
-
-  //Set up the weather description
-  let weatherDesc = document.getElementById("weather-desc");
-  weatherDesc.innerHTML = `${desc}`;
 
   //Set up the weather icon
   let weatherIcon = document.getElementById("weather-icon");
   weatherIcon.setAttribute("src", iconsrc);
   weatherIcon.setAttribute("alt", desc);
+
+  //Set up the weather description
+  let weatherDesc = document.getElementById("weather-desc");
+  weatherDesc.innerHTML = `${desc}`;
+
+  let weatherTemp = document.getElementById("temp");
+  weatherTemp.innerHTML = `${temperature}&deg;F | ${windSpeed} mph wind`;
 }
 
 async function getTheWeather() {
@@ -57,8 +58,13 @@ function showForecast(forecasts) {
 
   highTemps = dates.map((date) =>
     forecasts
-      .filter((x) => x.dt_txt.startsWith(date))
+      .filter((x) => x.dt_txt.startsWith(date) && x.dt_txt.endsWith("09:00:00"))
       .reduce((prev, next) => (prev.main.temp < next.main.temp ? prev : next))
+  );
+  forecastImg = dates.map((dates) =>
+    forecasts
+      .filter((x) => x.dt_txt.startsWith(date) && x.dt_txt.endsWith("09:00:00"))
+      .reduce((currentObj) => currentObj.weather.icon)
   );
 
   lowTemps = dates.map((date) =>
@@ -67,14 +73,10 @@ function showForecast(forecasts) {
       .reduce((prev, next) => (prev.main.temp < next.main.temp ? prev : next))
   );
 
-  weatherElt = document.querySelector("body span");
+  weatherElt = document.querySelector("#three-day");
   for (let i = 0; i < 3; i++) {
     let newsection = document.createElement("section");
-    newsection.innerHTML = `<h2>${dates[i]}</h2><p>High: ${highTemps[
-      i
-    ].main.temp.toFixed(0)}&deg;</p><p>Low: ${lowTemps[i].main.temp.toFixed(
-      0
-    )}&deg;</p>`;
+    newsection.innerHTML = `<h2>${dates[i]}</h2> <img id="weather-icon" src="https://openweather.org/img/wn/${forecastImg[i]}/>`;
     weatherElt.append(newsection);
   }
 }

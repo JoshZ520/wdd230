@@ -33,6 +33,11 @@
     display: grid;
   }
 
+  #three-day {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+
   #links {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
