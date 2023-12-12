@@ -12,6 +12,7 @@ function displayWeather(weatherData) {
   const iconsrc = `https://openweathermap.org/img/wn/${weatherData.weather[0].icon}.png`;
   const desc = weatherData.weather[0].description;
   const temperature = weatherData.main.temp.toFixed(0);
+  const humidity = weatherData.main.humidity;
 
   //Set up the weather icon
   let weatherIcon = document.getElementById("weather-icon");
@@ -24,6 +25,9 @@ function displayWeather(weatherData) {
 
   let weatherTemp = document.getElementById("temp");
   weatherTemp.innerHTML = `${temperature}&deg;F`;
+
+  let hum = document.getElementById("humidity");
+  hum.innerHTML = `${humidity}`;
 }
 
 async function getTheWeather() {
@@ -70,7 +74,8 @@ function showForecast(forecasts) {
   let weatherElt = document.querySelector("#three-day");
   for (let i = 0; i < 3; i++) {
     let newsection = document.createElement("section");
-    newsection.innerHTML = `<h2>${dates[i]}</h2> <p>${weatherDescription[i].weather[0].description}</p> <img src="https://openweathermap.org/img/wn/${forecastIcon[i].weather[0].icon}" alt="${weatherDescription[i].weather[0].description}">`;
+    newsection.innerHTML = `<h2>${dates[i]}</h2> <p>${weatherDescription[i].weather[0].description}</p> <img src="https://openweathermap.org/img/wn/${forecastIcon[i].weather[0].icon}.png" alt="${weatherDescription[i].weather[0].description}">`;
+
     weatherElt.append(newsection);
   }
 }
