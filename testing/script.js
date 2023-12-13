@@ -16,11 +16,11 @@ function showSelectedOption(elementId, selectedValue) {
 }
 
 // Fetch data from JSON file and populate dropdowns
-fetch("data.json")
+fetch("data/fruit.json")
   .then((response) => response.json())
   .then((data) => {
-    populateDropdown("dropdown1", data.dropdown1);
-    populateDropdown("dropdown2", data.dropdown2);
-    populateDropdown("dropdown3", data.dropdown3);
+    populateDropdown("dropdown1", data);
+    populateDropdown("dropdown2", data.name);
+    populateDropdown("dropdown3", data.data);
   })
   .catch((error) => console.error("Error fetching data:", error));
