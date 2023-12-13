@@ -1,5 +1,3 @@
-// Load fruit list for building smoothies
-
 // Function to populate a dropdown
 function populateDropdown(dropdownId, options) {
   const dropdown = document.getElementById(dropdownId);
@@ -18,24 +16,11 @@ function showSelectedOption(elementId, selectedValue) {
 }
 
 // Fetch data from JSON file and populate dropdowns
-fetch("data/fruit.json")
+fetch("data.json")
   .then((response) => response.json())
   .then((data) => {
-    populateDropdown("dropdown", data.name);
-    populateDropdown("dropdown1", data.name);
-    populateDropdown("dropdown2", data.name);
-  })
-  .catch((error) => console.error("Error fetching data:", error));
-
-// Fetch data from the JSON file
-fetch("data/fruit.json")
-  .then((response) => response.json())
-  .then((data) => {
-    data.forEach((item) => {
-      const option = document.createElement("option");
-      option.value = `option${item.id}`;
-      option.textContent = item.name;
-      dropdown.appendChild(option);
-    });
+    populateDropdown("dropdown1", data.dropdown1);
+    populateDropdown("dropdown2", data.dropdown2);
+    populateDropdown("dropdown3", data.dropdown3);
   })
   .catch((error) => console.error("Error fetching data:", error));

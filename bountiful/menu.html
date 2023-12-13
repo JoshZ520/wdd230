@@ -28,19 +28,39 @@
     </header>
     <main id="menu-main">
       <h1 id="menu-heading">Make a Smoothie here!</h1>
+
+      <form action="confirmation.html" method="get">
+        <label>Name: <input type="text" id="name" name="name" required></label><br><br>
+
+        <label>Email: <input type="email" id="email" name="email" required></label><br><br>
+
+        <label>Phone Number: <input type="tel" id="phone" name="phone" required></label><br><br>
+        
+        <label><input type="radio" id="cash" name="cash" required>Cash</label>
+        <label><input type="radio" id="card" name="card">Credit Card</label>
+        <label><input type="radio" id="other" name="other">Other**</label>
       <p>
         Here you select 3 fruits and then hit submit. Then we will use our
         magical smoothie machine to tell you all kinds of nutritional facts
         about your selection!
       </p>
-      <label for="dropdown"> Select fruit</label>
-        <select></select>
-        <select></select>
-        <select></select>
+      <label for="dropdown"> Select 3 fruits</label>
+        <select id="dropdown" onchange="showSelectedOption('selected-fruit', this.options[this.selectedIndex].textContent)"></select>
+      <label for="dropdown1"> Select </label>
+        <select id="dropdown1" onchange="showSelectedOption('selected-fruit1', this.options[this.selectedIndex].textContent)"></select>
+      <label for="dropdown2"> Select</label>
+        <select id="dropdown2" onchange="showSelectedOption('selected-fruit2', this.options[this.selectedIndex].textContent)"></select>
+        <p id="selected-fruit"></p>
+        <p id="selected-fruit1"></p>
+        <p id="selected-fruit2"></p>
       </section>
-      <a href="confirmation.html"
+      <input type="text" id="special" name="instructions">
+      <p>**You will pay for your smoothie once you have picked it up</p>
+      <a
         ><button id="smoothieSubmit">Submit</button></a
       >
+    </form>
+
     </main>
     <footer>
       <section id="links">

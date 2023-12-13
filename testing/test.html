@@ -2,20 +2,38 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="test-style.css" />
-    <title>Document</title>
+    <title>Dropdown Menus and Selection</title>
   </head>
   <body>
-    <ul>
-      <li>Unordered item</li>
-      <li>
-        Unordered item
-        <ol>
-          <li>Item 1</li>
-          <li>Item 2</li>
-        </ol>
-      </li>
-    </ul>
+    <h1>Select Your Options</h1>
+
+    <!-- First dropdown -->
+    <label for="dropdown1">Dropdown 1:</label>
+    <select
+      id="dropdown1"
+      onchange="showSelectedOption('selectedOption1', this.value)"
+    ></select>
+
+    <!-- Second dropdown -->
+    <label for="dropdown2">Dropdown 2:</label>
+    <select
+      id="dropdown2"
+      onchange="showSelectedOption('selectedOption2', this.value)"
+    ></select>
+
+    <!-- Third dropdown -->
+    <label for="dropdown3">Dropdown 3:</label>
+    <select
+      id="dropdown3"
+      onchange="showSelectedOption('selectedOption3', this.value)"
+    ></select>
+
+    <hr />
+
+    <p>Selected option from dropdown 1: <span id="selectedOption1"></span></p>
+    <p>Selected option from dropdown 2: <span id="selectedOption2"></span></p>
+    <p>Selected option from dropdown 3: <span id="selectedOption3"></span></p>
+
+    <script src="script.js"></script>
   </body>
 </html>
