@@ -25,7 +25,7 @@
   </head>
   <body>
     <header id="header">
-      <img class="logo" src="images/logo_img.webp" />
+      <img class="logo" src="images/logo_img.webp" alt="company-logo" />
       <h3 id="company-name">Bountiful Foods</h3>
       <nav>
         <button class="menu-hide">X</button>
@@ -37,7 +37,7 @@
           <li><a href="menu.html">Smoothies</a></li>
           <li><a href="aboutus.html">About Us</a></li>
         </ul>
-        <a href="menu.html"><button>Make Smoothies Here!</button></a>
+        <button><a href="menu.html">Make Smoothies Here!</a></button>
       </nav>
     </header>
     <main id="menu-main">
@@ -63,14 +63,15 @@
           magical smoothie machine to tell you all kinds of nutritional facts
           about your selection!
         </p>
-        <seciton>
+        <section>
           <span
             ><label>
               Select 1st fruit <br /><select
                 id="dropdown1"
                 name="fruit1"
                 required
-              ></select
+              >
+                <option></option></select
             ></label>
             <p id="selected-fruit1"></p>
           </span>
@@ -80,7 +81,8 @@
                 id="dropdown2"
                 name="fruit2"
                 required
-              ></select
+              >
+                <option></option></select
             ></label>
             <p id="selected-fruit2"></p>
           </span>
@@ -90,18 +92,19 @@
                 id="dropdown3"
                 name="fruit3"
                 required
-              ></select
+              >
+                <option></option></select
             ></label>
             <p id="selected-fruit3"></p>
           </span>
-        </seciton>
+        </section>
         <label
           >Special instructions:
           <textarea id="specialInstruction" name="instructions"></textarea>
         </label>
 
         <p>**You will pay for your smoothie once you have picked it up</p>
-        <a><button id="smoothieSubmit">Submit</button></a>
+        <button id="smoothieSubmit"><a>Submit</a></button>
       </form>
     </main>
     <footer>

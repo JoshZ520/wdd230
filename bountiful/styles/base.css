@@ -213,3 +213,15 @@ iframe {
 #about-main p:nth-child(even) {
   background-color: var(--sec-bg-color);
 }
+
+/* confirmation page */
+
+#fruit1,
+#fruit2,
+#fruit3 {
+  background-color: var(--sec-bg-color);
+  margin: 30px;
+  padding: 5px;
+  border: black solid 1px;
+  border-radius: 25%;
+}
