@@ -93,6 +93,9 @@ main {
   flex-direction: column;
 }
 
+button a {
+  color: black;
+}
 #smoothies {
   background-color: var(--sec-bg-color);
   padding: 15px;
