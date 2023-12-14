@@ -1,28 +1,42 @@
 // Load fruit list for building smoothies
 
-const dropdown = document.getElementById("dropdown");
-const dropdown2 = document.getElementById("dropdown1");
+const dropdown1 = document.getElementById("dropdown1");
+const dropdown2 = document.getElementById("dropdown2");
+const dropdown3 = document.getElementById("dropdown3");
+
+const selectedFruit1 = document.getElementById("selected-fruit1");
+const selectedFruit2 = document.getElementById("selected-fruit2");
+const selectedFruit3 = document.getElementById("selected-fruit3");
+
+function populateDropdown(dropdown, data) {
+  data.forEach((item) => {
+    const option = document.createElement("option");
+    option.value = `option${item.id}`;
+    option.textContent = item.name;
+    dropdown.appendChild(option);
+  });
+}
 
 // Fetch data from the JSON file
 fetch("data/fruit.json")
   .then((response) => response.json())
-  .then((data) => {
-    data.forEach((item) => {
-      const option = document.createElement("option");
-      option.value = `option${item.id}`;
-      option.textContent = item.name;
-      dropdown.appendChild(option);
-    });
+  .then((fruitData) => {
+    populateDropdown(dropdown1, fruitData);
+    populateDropdown(dropdown2, fruitData);
+    populateDropdown(dropdown3, fruitData);
   })
   .catch((error) => console.error("Error fetching data:", error));
 
-const selectedFruit1 = document.getElementById("selected-fruit");
+function updateSelectedFruit(selectedElement, dropdown) {
+  dropdown.addEventListener("change", function () {
+    const selectedOption = this.options[this.selectedIndex];
+    const selectedValue = selectedOption ? selectedOption.textContent : "";
+    selectedElement.textContent = selectedValue;
+  });
+}
 
-dropdown.addEventListener("change", function () {
-  const selectedValue = this.options[this.selectedIndex].textContent;
-  if (selectedValue !== "") {
-    selectedFruit1.textContent = `${selectedValue}`;
-  } else {
-    selectedFruit1.textContent = "";
-  }
-});
+updateSelectedFruit(selectedFruit1, dropdown1);
+updateSelectedFruit(selectedFruit2, dropdown2);
+updateSelectedFruit(selectedFruit3, dropdown3);
+
+// confrimation page

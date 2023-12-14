@@ -32,6 +32,7 @@ header {
   justify-self: center;
   align-self: center;
   padding: 20px;
+  width: 150px;
 }
 
 #company-name {
@@ -163,6 +164,15 @@ footer a {
   text-align: center;
 }
 
+#menu-main {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+#special {
+  resize: both;
+}
 /* About Us */
 
 #about-main {
