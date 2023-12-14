@@ -2,12 +2,26 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="scripts/common.js" defer></script>
-    <script src="scripts/order.js" defer></script>
+    <meta
+      name="description"
+      content="Smoothie Company - Products made with fresh fruit"
+    />
+    <meta name="keywords" content="food, fresh, healthy, sustainable, fruit" />
+    <meta name="author" content="Bountiful Foods" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
     <link rel="stylesheet" href="styles/base.css" />
     <link rel="stylesheet" href="styles/larger.css" />
-    <title>Smoothie Menu</title>
+
+    <script src="scripts/common.js" defer></script>
+    <script src="scripts/order.js" defer></script>
+
+    <title>Order a Smoothie</title>
   </head>
   <body>
     <header id="header">
@@ -30,7 +44,9 @@
       <h1 id="menu-heading">Make a Smoothie here!</h1>
 
       <form action="confirmation.html" method="get">
-        <label>Name: <input type="text" id="name" name="name" required /></label
+        <label
+          >Name for Order:
+          <input type="text" id="name" name="order-name" required /></label
         ><br /><br />
 
         <label
@@ -50,25 +66,40 @@
         <seciton>
           <span
             ><label>
-              Select a fruit <br /><select id="dropdown1"></select
+              Select 1st fruit <br /><select
+                id="dropdown1"
+                name="fruit1"
+                required
+              ></select
             ></label>
             <p id="selected-fruit1"></p>
           </span>
           <span>
             <label>
-              Select a fruit <br /><select id="dropdown2"></select
+              Select 2nd fruit <br /><select
+                id="dropdown2"
+                name="fruit2"
+                required
+              ></select
             ></label>
             <p id="selected-fruit2"></p>
           </span>
           <span>
             <label>
-              Select a fruit <br /><select id="dropdown3"></select
+              Select 3rd fruit <br /><select
+                id="dropdown3"
+                name="fruit3"
+                required
+              ></select
             ></label>
             <p id="selected-fruit3"></p>
           </span>
         </seciton>
-        <label>Special instructions:</label>
-        <input type="text" id="special" name="instructions" />
+        <label
+          >Special instructions:
+          <textarea id="specialInstruction" name="instructions"></textarea>
+        </label>
+
         <p>**You will pay for your smoothie once you have picked it up</p>
         <a><button id="smoothieSubmit">Submit</button></a>
       </form>

@@ -11,7 +11,7 @@ const selectedFruit3 = document.getElementById("selected-fruit3");
 function populateDropdown(dropdown, data) {
   data.forEach((item) => {
     const option = document.createElement("option");
-    option.value = `option${item.id}`;
+    option.value = item.name;
     option.textContent = item.name;
     dropdown.appendChild(option);
   });
@@ -38,5 +38,3 @@ function updateSelectedFruit(selectedElement, dropdown) {
 updateSelectedFruit(selectedFruit1, dropdown1);
 updateSelectedFruit(selectedFruit2, dropdown2);
 updateSelectedFruit(selectedFruit3, dropdown3);
-
-// confrimation page

@@ -170,7 +170,13 @@ footer a {
   text-align: center;
 }
 
-#special {
+#order-confirm {
+  text-align: center;
+}
+#contact {
+  text-align: center;
+}
+#specialInstruction {
   resize: both;
 }
 /* About Us */

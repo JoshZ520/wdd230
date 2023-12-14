@@ -2,11 +2,26 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="scripts/common.js" defer></script>
+    <meta
+      name="description"
+      content="Smoothie Company - Products made with fresh fruit"
+    />
+    <meta name="keywords" content="food, fresh, healthy, sustainable, fruit" />
+    <meta name="author" content="Bountiful Foods" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
     <link rel="stylesheet" href="styles/base.css" />
     <link rel="stylesheet" href="styles/larger.css" />
-    <title>Thanks for making a smoothie!</title>
+
+    <script src="scripts/common.js" defer></script>
+    <script src="scripts/confirm.js" defer></script>
+
+    <title>Confirming Order</title>
   </head>
   <body>
     <header id="header">
@@ -25,7 +40,24 @@
       </nav>
     </header>
     <main>
-      <h1>Thank you for making a Smoothie!</h1>
+      <section id="order-confirm">
+        <h1>Thank you for making a Smoothie!</h1>
+        <h3 class="order-ready">
+          An order for <span id="order-name"></span> will be ready in about 20
+          minutes!
+        </h3>
+        <span id="fruit1"></span><span id="fruit2"></span>
+        <span id="fruit3"></span>
+        <p id="specialInstruction"></p>
+        <p id="email"></p>
+        <p id="phone"></p>
+        <h4 id="date">This order was made on <span class="today"></span></h4>
+        <p></p>
+      </section>
+      <section id="contact">
+        <h2>Reach out to this number if there are any issues:</h2>
+        <h3>850-839-9285</h3>
+      </section>
     </main>
     <footer>
       <section id="links">
