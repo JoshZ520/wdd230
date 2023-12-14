@@ -93,8 +93,13 @@ main {
   flex-direction: column;
 }
 
-button a {
+#smoothie-button {
+  background-color: white;
   color: black;
+  width: 50px;
+  border: black solid 1px;
+  border-radius: 5px;
+  padding: 5px;
 }
 #smoothies {
   background-color: var(--sec-bg-color);
@@ -188,7 +193,7 @@ footer a {
   width: 100%;
   text-align: center;
 }
-#img-container {
+.img-container {
   display: block;
   align-items: center;
 }
